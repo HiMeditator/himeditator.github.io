@@ -1,0 +1,15 @@
+{
+  "name": "himeditator.github.io",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vitepress dev pages",
+    "build": "vitepress build pages",
+    "preview": "vitepress preview pages"
+  },
+  "author": "himeditator",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
