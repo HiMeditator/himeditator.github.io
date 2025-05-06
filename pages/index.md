@@ -8,11 +8,14 @@ hero:
   tagline: "Currently, I am postgraduate student majoring in software engineering, with interests in software development and large language models."
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Profile
+      link: /profile/profile
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Projects
+      link: /projects/light-at
+    - theme: alt
+      text: Blogs
+      link: /blogs/hello
 
 features:
   - title: Feature A
