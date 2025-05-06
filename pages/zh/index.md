@@ -4,18 +4,19 @@ layout: home
 
 hero:
   name: "HiMeditator"
-  text: "Trying to be a better developer."
-  tagline: "Currently, I am postgraduate student majoring in software engineering, with interests in software development and large language models."
+  text: "努力成为一名更好的开发者。"
+  tagline: "目前，我是一名软件工程专业的研究生，对软件开发和大型语言模型感兴趣。"
+
   actions:
     - theme: brand
-      text: Profile
-      link: /profile/profile
+      text: 个人信息
+      link: /zh/profile/profile
     - theme: alt
-      text: Projects
-      link: /projects/light-at
+      text: 项目列表
+      link: /zh/projects/light-at
     - theme: alt
-      text: Blogs
-      link: /blogs/hello
+      text: 博客列表
+      link: /zh/blogs/hello
 
 features:
   - title: Frontend

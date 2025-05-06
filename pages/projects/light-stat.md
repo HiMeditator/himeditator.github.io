@@ -1,6 +1,6 @@
 # light-stat
 
-> [!IMPORTANT]
-> 项目还在初步开发中
+> [!IMPORTANT] Note
+> The project is still in the early stages of development.
 
-Light Stat 是一个记录和可视化用户编码历程的插件。
+Light Stat is a plugin for recording and visualizing a user's coding journey.
