@@ -1,6 +1,5 @@
 import { defineConfig } from 'vitepress'
 import { sharedConfig } from './config/share'
-import { enConfig } from './config/en'
 import { zhConfig } from './config/zh'
 
 // https://vitepress.dev/reference/site-config
@@ -10,8 +9,7 @@ export default defineConfig({
   locales: {
     root: {
       label: 'English',
-      lang: 'en',
-      ...enConfig
+      lang: 'en'
     },
     zh: {
       label: '简体中文',

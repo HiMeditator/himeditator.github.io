@@ -5,23 +5,12 @@ layout: home
 hero:
   name: "HiMeditator"
   text: "Trying to be a better developer."
-  tagline: "Currently, I am postgraduate student majoring in software engineering, with interests in software development and large language models."
+  tagline: "Currently, I am postgraduate student majoring in software engineering, with interests in software development and large language models. In the future, I hope to become a full-stack engineer."
   actions:
     - theme: brand
-      text: Profile
-      link: /profile/profile
-    - theme: alt
       text: Projects
       link: /projects/light-at
     - theme: alt
       text: Blogs
-      link: /blogs/hello
-
-features:
-  - title: Frontend
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Backend
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: LLM
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      link: /blogs/external-blogs
 ---

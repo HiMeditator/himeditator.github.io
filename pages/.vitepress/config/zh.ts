@@ -4,17 +4,10 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: {
     nav: [
       { text: '主页', link: '/zh/' },
-      { text: '个人信息', link: '/zh/profile/profile' },
       { text: '项目列表', link: '/zh/projects/light-at' },
-      { text: '博客列表', link: '/zh/blogs/hello' }
+      { text: '博客列表', link: '/zh/blogs/external-blogs' }
     ],
     sidebar: [
-      {
-        text: '个人信息',
-        items: [
-          { text: '个人信息', link: '/zh/profile/profile' }
-        ]
-      },
       {
         text: '项目列表',
         items: [
@@ -26,7 +19,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       {
         text: '博客列表',
         items: [
-          { text: '你好', link: '/zh/blogs/hello' }
+          { text: '站外博客', link: '/zh/blogs/external-blogs' }
         ]
       }
     ]
