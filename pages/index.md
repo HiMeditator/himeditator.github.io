@@ -1,11 +1,12 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
+title: Home
 layout: home
-
 hero:
   name: "HiMeditator"
   text: "Trying to be a better developer."
   tagline: "Currently, I am postgraduate student majoring in software engineering, with interests in software development and large language models. In the future, I hope to become a full-stack engineer."
+  image:
+    src: /developer.svg
   actions:
     - theme: brand
       text: Projects

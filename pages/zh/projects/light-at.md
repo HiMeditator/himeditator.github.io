@@ -1,3 +1,7 @@
+---
+title: Light At
+---
+
 <div align="center" >
     <img src="/projects/light-at/light-at.png" width="90px" height="90px"/>
     <h1 align="center">light-at</h1>

@@ -1,3 +1,7 @@
+---
+title: Light Statistics
+---
+
 <div align="center">
     <img src="/projects/light-stat/light-stat.png" width="90px" height="90px"/>
     <h1 align="center">light-stat</h1>

@@ -1,3 +1,7 @@
+---
+title: Light Browser
+---
+
 <div align="center" >
     <img src="/projects/light-browser/light-browser.png" width="90px" height="90px"/>
     <h1 align="center">light-browser</h1>

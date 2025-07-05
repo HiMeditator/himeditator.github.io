@@ -21,7 +21,7 @@ export const sharedConfig = defineConfig({
       provider: 'local'
     },
     outline: {
-      level: [1, 6],
+      level: [2, 6],
     },
     logo: '/logo.gif',
     socialLinks: [
