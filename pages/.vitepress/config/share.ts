@@ -25,17 +25,27 @@ export const sharedConfig = defineConfig({
     },
     logo: '/logo.gif',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/HiMeditator' }
+      { icon: 'github', link: 'https://github.com/HiMeditator' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/629971797' },
+      { icon: 'csdn', link: 'https://blog.csdn.net/Hi_KER' }
     ],
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects/light-at' },
+      { text: 'Profile', link: '/profile/overview' },
+      { text: 'Projects', link: '/projects/auto-caption' },
       { text: 'Blogs', link: '/blogs/external-blogs' }
     ],
     sidebar: [
       {
+        text: 'Profile',
+        items: [
+          { text: 'Overview', link: '/profile/overview' }
+        ]
+      },
+      {
         text: 'Projects',
         items: [
+          { text: 'Auto Caption', link: '/projects/auto-caption' },
           { text: 'Light At', link: '/projects/light-at' },
           { text: 'Light Browser', link: '/projects/light-browser' },
           { text: 'Light Statistics', link: '/projects/light-stat' }

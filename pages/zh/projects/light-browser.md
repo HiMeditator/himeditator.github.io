@@ -3,7 +3,7 @@ title: Light Browser
 ---
 
 <div align="center" >
-    <img src="/projects/light-browser/light-browser.png" width="90px" height="90px"/>
+    <img src="/projects/light-browser/icon.png" width="90px" height="90px"/>
     <h1 align="center">light-browser</h1>
     <p>一个简单的插件，用于使用默认应用程序打开文件、通过 iframe 在 IDE 中浏览网页。</p>
 </div>

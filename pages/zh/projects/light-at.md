@@ -2,15 +2,24 @@
 title: Light At
 ---
 
+<style scoped>
+.multi-img img {
+    display: inline-block;
+    vertical-align: middle;
+}
+</style>
+
 <div align="center" >
-    <img src="/projects/light-at/light-at.png" width="90px" height="90px"/>
-    <h1 align="center">light-at</h1>
-    <p>轻亮是一个面向 VS Code 的大模型聊天插件。比起代码能力，轻亮更注重 IDE 内的大模型聊天体验。</p>
+    <div class="multi-img">
+        <img src="/projects/light-at/icon.png" width="100px" height="100px"/>
+        &nbsp;
+        <a href="https://github.com/HiMeditator/light-at">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=light-at" alt="Light At"/>
+        </a>
+    </div>
+    <p>轻亮是一个面向 VS Code 的大模型聊天插件。</p>
+    <p><i>v0.1.7版本已经发布。本项目已经基本成型，暂时没有继续添加功能的计划...</i></p>
 </div>
-
-## 📦 项目地址
-
-[Github](https://github.com/HiMeditator/light-at)
 
 ## 📥 下载
 

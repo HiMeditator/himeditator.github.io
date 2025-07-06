@@ -3,7 +3,7 @@ title: Light Browser
 ---
 
 <div align="center" >
-    <img src="/projects/light-browser/light-browser.png" width="90px" height="90px"/>
+    <img src="/projects/light-browser/icon.png" width="90px" height="90px"/>
     <h1 align="center">light-browser</h1>
     <p>A simple plugin for opening files with the default application and browsing web pages via iframe within the IDE.</p>
 </div>

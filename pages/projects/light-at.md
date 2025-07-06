@@ -2,15 +2,23 @@
 title: Light At
 ---
 
+<style scoped>
+.multi-img img {
+    display: inline-block;
+    vertical-align: middle;
+}
+</style>
+
 <div align="center">
-    <img src="/projects/light-at/light-at.png" width="90px" height="90px"/>
-    <h1 align="center">light-at</h1>
+    <div class="multi-img">
+        <img src="/projects/light-at/icon.png" width="100px" height="100px"/>
+        &nbsp;
+        <a href="https://github.com/HiMeditator/light-at">
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=light-at" alt="Light At"/>
+        </a>
+    </div>
     <p>Light-at is an intelligent assistant plugin for VS Code that focuses more on the large model chat experience within the IDE rather than coding capabilities.</p>
 </div>
-
-## 📦 Project Repository
-
-[Github](https://github.com/HiMeditator/light-at)
 
 ## 📥 Download
 
