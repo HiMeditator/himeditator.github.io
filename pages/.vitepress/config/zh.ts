@@ -20,6 +20,7 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
         items: [
           { text: 'Auto Caption', link: '/zh/projects/auto-caption' },
           { text: 'Light At', link: '/zh/projects/light-at' },
+          { text: 'P2P Chatroom', link: '/zh/projects/p2p-chatroom' },
           { text: 'Light Browser', link: '/zh/projects/light-browser' },
           { text: 'Light Statistics', link: '/zh/projects/light-stat' }
         ]

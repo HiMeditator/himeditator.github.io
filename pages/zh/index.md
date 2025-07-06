@@ -13,7 +13,7 @@ hero:
       link: /
     - theme: alt
       text: 个人信息
-      link: /profile/overview
+      link: /zh/profile/overview
     - theme: alt
       text: 项目列表
       link: /zh/projects/auto-caption

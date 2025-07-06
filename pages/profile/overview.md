@@ -16,11 +16,39 @@ const skills = [
     { title: 'Node.js', value: 60, state:'medium' },
     { title: 'Python', value: 70, state:'high' },
     { title: 'C++', value: 50, state:'medium' },
-    { title: 'Java', value: 30, state:'low' },
+    { title: 'Java', value: 40, state:'medium' },
     { title: 'English', value: 75, state:'high' },
     { title: 'Japanese', value: 25, state:'low' },
 ]
 </script>
+
+HiMeditator is a graduate student in software engineering who enjoys watching movies and trading stocks. His interests include front-end, software development, and the application development of large models.
+
+## Professional Skills
+
+<div class="skills">
+    <div v-for="skill in skills" :class="['skill', skill.state]">
+        <div class="skill-title">
+            <span>{{ skill.title }}</span><span>{{ skill.value }}%</span>
+        </div>
+        <meter min="0" max="100" optimum="100" high="70" low="40" :value="skill.value"></meter>
+    </div>
+</div>
+
+## GitHub Overview
+
+<div v-if="isDark">
+    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true&theme=dark" />
+</div>
+<div v-else>
+    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true" />
+</div>
+
+## GitHub Language Statistics
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiMeditator&layout=compact" />
+
+
 
 <style scoped>
 .skills {
@@ -66,29 +94,3 @@ const skills = [
     background:  #ff4d4f24;
 }
 </style>
-
-HiMeditator is a graduate student in software engineering who enjoys watching movies and trading stocks. His interests include front-end, software development, and the application development of large models.
-
-## Professional Skills
-
-<div class="skills">
-    <div v-for="skill in skills" :class="['skill', skill.state]">
-        <div class="skill-title">
-            <span>{{ skill.title }}</span><span>{{ skill.value }}%</span>
-        </div>
-        <meter min="0" max="100" optimum="100" high="70" low="40" :value="skill.value"></meter>
-    </div>
-</div>
-
-## GitHub Overview
-
-<div v-if="isDark">
-    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true&theme=dark" />
-</div>
-<div v-else>
-    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true" />
-</div>
-
-## GitHub Language Statistics
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiMeditator&layout=compact" />

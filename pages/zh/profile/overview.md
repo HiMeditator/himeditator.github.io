@@ -16,11 +16,39 @@ const skills = [
     { title: 'Node.js', value: 60, state:'medium' },
     { title: 'Python', value: 70, state:'high' },
     { title: 'C++', value: 50, state:'medium' },
-    { title: 'Java', value: 20, state:'low' },
+    { title: 'Java', value: 40, state:'medium' },
     { title: '英语', value: 75, state:'high' },
     { title: '日语', value: 25, state:'low' },
 ]
 </script>
+
+HiMeditator 是一名软件工程专业的研究生，平时喜欢看电影和股票交易。个人的专业兴趣是前端开发、软件开发和大模型的应用开发。
+
+## 专业技能
+
+<div class="skills">
+    <div v-for="skill in skills" :class="['skill', skill.state]">
+        <div class="skill-title">
+            <span>{{ skill.title }}</span><span>{{ skill.value }}%</span>
+        </div>
+        <meter min="0" max="100" optimum="100" high="69" low="39" :value="skill.value"></meter>
+    </div>
+</div>
+
+## GitHub 信息
+
+<div v-if="isDark">
+    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true&theme=dark" />
+</div>
+<div v-else>
+    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true" />
+</div>
+
+## GitHub 语言统计
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiMeditator&layout=compact" />
+
+
 
 <style scoped>
 .skills {
@@ -66,29 +94,3 @@ const skills = [
     background:  #ff4d4f24;
 }
 </style>
-
-HiMeditator 是一名软件工程专业的研究生，平时喜欢看电影和股票交易。个人的专业兴趣是前端开发、软件开发和大模型的应用开发。
-
-## 专业技能
-
-<div class="skills">
-    <div v-for="skill in skills" :class="['skill', skill.state]">
-        <div class="skill-title">
-            <span>{{ skill.title }}</span><span>{{ skill.value }}%</span>
-        </div>
-        <meter min="0" max="100" optimum="100" high="70" low="40" :value="skill.value"></meter>
-    </div>
-</div>
-
-## GitHub 信息
-
-<div v-if="isDark">
-    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true&theme=dark" />
-</div>
-<div v-else>
-    <img src="https://github-readme-stats.vercel.app/api?username=HiMeditator&show_icons=true" />
-</div>
-
-## GitHub 语言统计
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=HiMeditator&layout=compact" />

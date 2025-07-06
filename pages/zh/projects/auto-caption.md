@@ -14,7 +14,7 @@ title: Auto Caption
         <img src="/projects/auto-caption/icon.png" width="100px" height="100px"/>
         &nbsp;
         <a href="https://github.com/HiMeditator/auto-caption">
-            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=auto-caption" alt="Auto Caption"/>
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=auto-caption" alt="GitHub Repo"/>
         </a>
     </div>
     <p>Auto Caption 是一个跨平台的实时字幕显示软件。</p>

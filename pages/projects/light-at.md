@@ -14,7 +14,7 @@ title: Light At
         <img src="/projects/light-at/icon.png" width="100px" height="100px"/>
         &nbsp;
         <a href="https://github.com/HiMeditator/light-at">
-            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=light-at" alt="Light At"/>
+            <img src="https://github-readme-stats.vercel.app/api/pin/?username=HiMeditator&repo=light-at" alt="GitHub Repo"/>
         </a>
     </div>
     <p>Light-at is an intelligent assistant plugin for VS Code that focuses more on the large model chat experience within the IDE rather than coding capabilities.</p>

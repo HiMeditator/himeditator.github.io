@@ -47,6 +47,7 @@ export const sharedConfig = defineConfig({
         items: [
           { text: 'Auto Caption', link: '/projects/auto-caption' },
           { text: 'Light At', link: '/projects/light-at' },
+          { text: 'P2P Chatroom', link: '/projects/p2p-chatroom' },
           { text: 'Light Browser', link: '/projects/light-browser' },
           { text: 'Light Statistics', link: '/projects/light-stat' }
         ]
