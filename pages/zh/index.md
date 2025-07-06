@@ -26,7 +26,7 @@ features:
       src: /logo.gif
     title: 个人信息
     link: /zh/profile/overview
-    details: HiMeditator 是一名软件工程专业的研究生，但不太喜欢研究，而是对开发更感兴趣。个人的专业兴趣是前端开发、软件开发和大模型的应用开发。
+    details: HiMeditator 是一名软件工程专业的研究生，平时喜欢看电影和股票交易。个人的专业兴趣是前端开发、软件开发和大模型的应用开发。
   - icon:
       src: /projects/auto-caption/icon.png
     title: Auto Caption

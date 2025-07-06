@@ -56,7 +56,7 @@ Relevant tutorials:
 - [Obtain API KEY (Chinese)](https://help.aliyun.com/zh/model-studio/get-api-key)
 - [Configure API Key in Environment Variables (Chinese)](https://help.aliyun.com/zh/model-studio/configure-api-key-through-environment-variables).
 
-If you want to understand how the caption engine works or if you want to develop your own caption engine, please refer to the [Caption Engine Explanation Document](./docs/engine-manual/en.md).
+If you want to understand how the caption engine works or if you want to develop your own caption engine, please refer to the [Caption Engine Explanation Document](https://github.com/HiMeditator/auto-caption/blob/main/docs/engine-manual/en.md).
 ## ✨ Features
 
 - Multi-language interface support

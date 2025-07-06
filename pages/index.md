@@ -26,7 +26,7 @@ features:
       src: /logo.gif
     title: Personal Information
     link: /profile/overview
-    details: HiMeditator is a graduate student in software engineering but is not very fond of research and is more interested in development. His interests lie in front-end, software development, and the application development of large models.
+    details: HiMeditator is a graduate student in software engineering who enjoys watching movies and trading stocks. His interests include front-end, software development, and the application development of large models.
 
   - icon:
       src: /projects/auto-caption/icon.png
