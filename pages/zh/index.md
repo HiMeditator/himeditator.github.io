@@ -38,3 +38,14 @@ features:
     link: /zh/projects/light-at
     details: Light At 是一个面向 VS Code 的智能助手插件。Light At 注重 IDE 内的大模型聊天体验致力于提供快速便捷的 IDE 内聊天体验。
 ---
+
+<hr style="margin-top: 64px;width: 100%;">
+
+<div style="text-align: center;">
+  <p style="font-size:12px;">Copyright © 2025 Chen Janai. All rights reserved.</p>
+  <img
+    style="display: inline-block;"
+    src="https://visitor-badge.laobi.icu/badge?page_id=himeditator.github.io"
+    alt="Visitor Badge"
+  />
+</div>

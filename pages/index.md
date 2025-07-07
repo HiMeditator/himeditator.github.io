@@ -40,3 +40,14 @@ features:
     details: Light At is an intelligent assistant plugin for VS Code. It focuses on providing a seamless and efficient large model chat experience within the IDE, aiming to offer quick and convenient in-IDE chat functionality.
 
 ---
+
+<hr style="margin-top: 64px;width: 100%;">
+
+<div style="text-align: center;">
+  <p style="font-size:12px;">Copyright © 2025 Chen Janai. All rights reserved.</p>
+  <img
+    style="display: inline-block;"
+    src="https://visitor-badge.laobi.icu/badge?page_id=himeditator.github.io"
+    alt="Visitor Badge"
+  />
+</div>
