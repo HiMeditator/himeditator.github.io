@@ -31,7 +31,7 @@ HiMeditator is a graduate student in software engineering who enjoys watching mo
         <div class="skill-title">
             <span>{{ skill.title }}</span><span>{{ skill.value }}%</span>
         </div>
-        <meter min="0" max="100" optimum="100" high="70" low="40" :value="skill.value"></meter>
+        <meter min="0" max="100" optimum="100" high="69" low="40" :value="skill.value"></meter>
     </div>
 </div>
 
