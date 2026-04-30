@@ -11,7 +11,7 @@ export default function Hero() {
         HiMeditator
       </h1>
       <p className="text-xl mb-2" style={{ color: 'var(--c-text-secondary)' }}>
-        Agent开发 | 开源爱好者 | 研二在读
+        Agent开发 | 开源开发者 | 软件工程专业
       </p>
       <p className="text-lg mb-8" style={{ color: 'var(--c-text-secondary)' }}>
         "Code is cheap, show me the prompt."

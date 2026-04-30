@@ -49,6 +49,11 @@
     inset 2px 2px 0 rgba(255, 255, 255, 0.1);
 }
 
+.pixel-blur {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 .pixel-checkerboard {
   background-image:
     linear-gradient(45deg, var(--c-bg-tertiary) 25%, transparent 25%),

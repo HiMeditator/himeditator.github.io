@@ -77,20 +77,24 @@ export default function Profile() {
         </h2>
         <div className="flex flex-wrap gap-4">
           <div className="pixel-checkerboard p-4 text-center min-w-32">
-            <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>10+</div>
-            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>项目</div>
+            <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>~20</div>
+            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Repositories</div>
           </div>
           <div className="pixel-checkerboard p-4 text-center min-w-32">
             <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>500+</div>
-            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Star</div>
+            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Stars</div>
+          </div>
+          <div className="pixel-checkerboard p-4 text-center min-w-32">
+            <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>300+</div>
+            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Commits</div>
           </div>
           <div className="pixel-checkerboard p-4 text-center min-w-32">
             <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>10+</div>
-            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Followers</div>
+            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Pull Requests</div>
           </div>
           <div className="pixel-checkerboard p-4 text-center min-w-32">
-            <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>10+</div>
-            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>PR</div>
+            <div className="text-2xl font-bold" style={{ color: 'var(--c-accent)' }}>TypeScript</div>
+            <div className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>Most Used Language</div>
           </div>
         </div>
       </div>

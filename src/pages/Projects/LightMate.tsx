@@ -3,8 +3,8 @@ import { projects } from '../../data/projects'
 import PixelButton from '../../components/Common/PixelButton'
 import Icon from '../../components/Common/Icon'
 
-export default function LightBrowser() {
-  const project = projects.find(p => p.id === 'light-browser')!
+export default function LightMate() {
+  const project = projects.find(p => p.id === 'light-mate')!
 
   return (
     <div className="py-8">
@@ -18,7 +18,7 @@ export default function LightBrowser() {
       <div className="pixel-card p-8 mb-8">
         <div className="flex items-center gap-4 mb-6">
           <div style={{ color: 'var(--c-accent)' }}>
-            <img src="/icons/light-browser.png" alt="Logo" className="w-18 h-18 object-contain" />
+            <img src="/icons/light-mate.png" alt="Logo" className="w-18 h-18 object-contain" />
           </div>
           <div>
             <h1 className="text-3xl font-bold" style={{ color: 'var(--c-text-primary)' }}>
@@ -26,7 +26,7 @@ export default function LightBrowser() {
             </h1>
             <div className="flex items-center gap-3 mt-1">
               <p className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>
-                VSCode 工具插件
+                面向 VS Code 的轻量级大模型智能体插件
               </p>
               {project.startDate && (
                 <span className="text-xs px-2 py-0.5 rounded-sm" style={{ backgroundColor: 'var(--c-bg-secondary)', color: 'var(--c-text-secondary)' }}>
@@ -48,12 +48,6 @@ export default function LightBrowser() {
               <span style={{ marginLeft: '6px' }}>GitHub</span>
             </PixelButton>
           </a>
-          <a href={project.webpage} target="_blank" rel="noopener noreferrer">
-            <PixelButton variant="secondary">
-              <Icon name="Package" size={18} />
-              <span style={{ marginLeft: '6px' }}>VSCode 市场</span>
-            </PixelButton>
-          </a>
         </div>
 
         <div className="pixel-checkerboard p-6 rounded-sm">
@@ -72,27 +66,13 @@ export default function LightBrowser() {
         </div>
       </div>
 
-      <div className="pixel-card p-6 mb-6">
-        <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
-          <Icon name="FilmSlate" size={24} weight="bold" />
-          <span>项目截图</span>
-        </h2>
-        <div className="pixel-checkerboard p-4 rounded-sm">
-          <img
-            src="/images/light-browser.png"
-            alt="Light Browser 插件截图"
-            className="w-full rounded-sm"
-          />
-        </div>
-      </div>
-
       <div className="pixel-card p-6">
         <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
           <Icon name="Code" size={24} weight="bold" />
           <span>技术栈</span>
         </h2>
         <div className="flex flex-wrap gap-2">
-          {['TypeScript', 'VSCode API', 'Node.js'].map(tech => (
+          {['Vue', 'TypeScript', 'VSCode API', 'Node.js', 'Ollama / OpenAI / Anthropic API'].map(tech => (
             <span
               key={tech}
               className="text-sm px-3 py-1 rounded-sm"

@@ -8,6 +8,7 @@ import ProjectsIndex from './pages/Projects/index'
 import AutoCaption from './pages/Projects/AutoCaption'
 import LightAt from './pages/Projects/LightAt'
 import LightBrowser from './pages/Projects/LightBrowser'
+import LightMate from './pages/Projects/LightMate'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/projects/auto-caption" element={<AutoCaption />} />
             <Route path="/projects/light-at" element={<LightAt />} />
             <Route path="/projects/light-browser" element={<LightBrowser />} />
+            <Route path="/projects/light-mate" element={<LightMate />} />
           </Routes>
         </Layout>
       </BrowserRouter>

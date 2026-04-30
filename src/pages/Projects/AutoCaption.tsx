@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom'
 import { projects } from '../../data/projects'
 import PixelButton from '../../components/Common/PixelButton'
 import Icon from '../../components/Common/Icon'
+import { useTheme } from '../../context/ThemeContext'
 
 export default function AutoCaption() {
+  const { theme } = useTheme()
   const project = projects.find(p => p.id === 'auto-caption')!
 
   return (
@@ -24,15 +26,36 @@ export default function AutoCaption() {
             <h1 className="text-3xl font-bold" style={{ color: 'var(--c-text-primary)' }}>
               {project.name}
             </h1>
-            <p className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>
-              实时字幕识别与显示软件
-            </p>
+            <div className="flex items-center gap-3 mt-1">
+              <p className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>
+                实时字幕识别与显示软件
+              </p>
+              {project.startDate && (
+                <span className="text-xs px-2 py-0.5 rounded-sm" style={{ backgroundColor: 'var(--c-bg-secondary)', color: 'var(--c-text-secondary)' }}>
+                  开始于 {project.startDate}
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
-        <p className="text-lg mb-6" style={{ color: 'var(--c-text-primary)' }}>
+        <p className="text-lg mb-4" style={{ color: 'var(--c-text-primary)' }}>
           {project.description}
         </p>
+
+        <div className="flex flex-wrap gap-2 mb-6">
+          <a href="https://github.com/HiMeditator/auto-caption/releases" target="_blank" rel="noopener noreferrer">
+            <img className="h-5" src="https://img.shields.io/badge/release-1.1.1-blue" alt="release" />
+          </a>
+          <a href="https://github.com/HiMeditator/auto-caption/issues" target="_blank" rel="noopener noreferrer">
+            <img className="h-5" src="https://img.shields.io/github/issues/HiMeditator/auto-caption?color=orange" alt="issues" />
+          </a>
+          <img className="h-5" src="https://img.shields.io/github/languages/top/HiMeditator/auto-caption?color=royalblue" alt="languages" />
+          <img className="h-5" src="https://img.shields.io/github/repo-size/HiMeditator/auto-caption?color=green" alt="repo size" />
+          <a href="https://github.com/HiMeditator/auto-caption" target="_blank" rel="noopener noreferrer">
+            <img className="h-5" src="https://img.shields.io/github/stars/HiMeditator/auto-caption?style=social" alt="stars" />
+          </a>
+        </div>
 
         <div className="flex gap-4 mb-8">
           <a href={project.github} target="_blank" rel="noopener noreferrer">
@@ -59,7 +82,19 @@ export default function AutoCaption() {
         </div>
       </div>
 
-      <div className="pixel-card p-6">
+      <div className="pixel-card p-6 mb-6">
+        <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
+          <Icon name="FilmSlate" size={24} weight="bold" />
+          <span>视频演示</span>
+        </h2>
+        <video
+          className="w-full rounded-sm"
+          controls
+          src="https://private-user-images.githubusercontent.com/89283635/537133717-9c188d78-9520-4397-bacf-4c8fdcc54874.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NjU4OTYsIm5iZiI6MTc3NzU2NTU5NiwicGF0aCI6Ii84OTI4MzYzNS81MzcxMzM3MTctOWMxODhkNzgtOTUyMC00Mzk3LWJhY2YtNGM4ZmRjYzU0ODc0Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDMwVDE2MTMxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgwMjVmYTNmZTNjMzIxN2IxZmFmMDRkMDkyNWNiMjI4MzhjODczYTA3ZDQyOTUwMzlmYzAwOGUwMmE1YTdhMjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.ttT8DhuVPQ7V4ygvILAtVlZvOFya9djn3c1eXLHjuXE"
+        />
+      </div>
+
+      <div className="pixel-card p-6 mb-6">
         <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
           <Icon name="Code" size={24} weight="bold" />
           <span>技术栈</span>
@@ -75,6 +110,23 @@ export default function AutoCaption() {
             </span>
           ))}
         </div>
+      </div>
+
+      <div className="pixel-card p-6">
+        <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
+          <Icon name="ChartBar" size={24} weight="bold" />
+          <span>Star 历史</span>
+        </h2>
+        <a href="https://www.star-history.com/#HiMeditator/auto-caption&Date" target="_blank" rel="noopener noreferrer">
+          <img
+            className="w-full max-w-2xl rounded-sm"
+            alt="Star History Chart"
+            src={theme === 'dark'
+              ? 'https://api.star-history.com/svg?repos=HiMeditator/auto-caption&type=Date&theme=dark'
+              : 'https://api.star-history.com/svg?repos=HiMeditator/auto-caption&type=Date'
+            }
+          />
+        </a>
       </div>
     </div>
   )
