@@ -85,13 +85,20 @@ export default function AutoCaption() {
       <div className="pixel-card p-6 mb-6">
         <h2 className="text-xl font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--c-text-primary)' }}>
           <Icon name="FilmSlate" size={24} weight="bold" />
-          <span>视频演示</span>
+          <span>项目图片</span>
         </h2>
-        <video
-          className="w-full rounded-sm"
-          controls
-          src="https://private-user-images.githubusercontent.com/89283635/537133717-9c188d78-9520-4397-bacf-4c8fdcc54874.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc1NjU4OTYsIm5iZiI6MTc3NzU2NTU5NiwicGF0aCI6Ii84OTI4MzYzNS81MzcxMzM3MTctOWMxODhkNzgtOTUyMC00Mzk3LWJhY2YtNGM4ZmRjYzU0ODc0Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA0MzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNDMwVDE2MTMxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgwMjVmYTNmZTNjMzIxN2IxZmFmMDRkMDkyNWNiMjI4MzhjODczYTA3ZDQyOTUwMzlmYzAwOGUwMmE1YTdhMjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT12aWRlbyUyRm1wNCJ9.ttT8DhuVPQ7V4ygvILAtVlZvOFya9djn3c1eXLHjuXE"
-        />
+        <div className="grid grid-cols-1 gap-4">
+          <img
+            src="/images/auto-caption.png"
+            alt="Auto Caption 截图"
+            className="w-full rounded-sm"
+          />
+          <img
+            src="/images/auto-caption-structure.png"
+            alt="Auto Caption 结构图"
+            className="w-full rounded-sm"
+          />
+        </div>
       </div>
 
       <div className="pixel-card p-6 mb-6">

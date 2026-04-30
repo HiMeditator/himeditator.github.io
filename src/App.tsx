@@ -13,7 +13,7 @@ import LightMate from './pages/Projects/LightMate'
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
