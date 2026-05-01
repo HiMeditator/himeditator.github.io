@@ -1,0 +1,113 @@
+/* Entrance animation: fade in and slide up */
+@keyframes pixel-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Simple fade in */
+@keyframes pixel-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Cursor blink */
+@keyframes pixel-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* Page enter animation */
+@keyframes pixel-page-enter {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Scroll-triggered entrance */
+.pixel-animate-in {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.pixel-animate-in.visible {
+  animation: pixel-fade-in-up 0.4s ease-out forwards;
+  animation-delay: calc(var(--stagger, 0) * 100ms);
+}
+
+/* Typing cursor */
+.pixel-cursor {
+  display: inline-block;
+  width: 0.4em;
+  height: 1.1em;
+  background-color: var(--c-accent);
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  animation: pixel-blink 0.8s step-end infinite;
+}
+
+/* Page transition */
+.pixel-page-enter {
+  animation: pixel-page-enter 0.25s ease-out;
+}
+
+/* Floating pixel particle */
+@keyframes pixel-drift {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--particle-opacity, 0.4);
+  }
+  90% {
+    opacity: var(--particle-opacity, 0.4);
+  }
+  100% {
+    transform: translate(var(--drift-x, 20px), var(--drift-y, -200px));
+    opacity: 0;
+  }
+}
+
+.pixel-particle {
+  position: absolute;
+  width: var(--size, 4px);
+  height: var(--size, 4px);
+  background-color: var(--c-accent);
+  opacity: 0;
+  animation: pixel-drift var(--duration, 10s) var(--delay, 0s) infinite;
+  pointer-events: none;
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  will-change: transform, opacity;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .pixel-animate-in {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+
+  .pixel-animate-in.visible {
+    animation: none !important;
+  }
+
+  .pixel-cursor {
+    animation: none;
+  }
+
+  .pixel-page-enter {
+    animation: none;
+  }
+
+  .pixel-particle {
+    animation: none;
+    display: none;
+  }
+}

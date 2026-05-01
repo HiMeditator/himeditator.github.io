@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { projects } from '../../data/projects'
+import AnimateInView from '../Common/AnimateInView'
 
 export default function Features() {
   const featuredProjects = projects.slice(0, 3)
@@ -10,22 +11,23 @@ export default function Features() {
         个人项目
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {featuredProjects.map(project => (
-          <Link
-            key={project.id}
-            to={`/projects/${project.id}`}
-            className="pixel-card p-6 block"
-          >
-            <div className="mb-4">
-              <img src={project.iconPath} alt={project.name} className="w-10 h-10 object-contain" />
-            </div>
-            <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--c-text-primary)' }}>
-              {project.name}
-            </h3>
-            <p className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>
-              {project.description.slice(0, 60)}...
-            </p>
-          </Link>
+        {featuredProjects.map((project, index) => (
+          <AnimateInView key={project.id} stagger={index} className="h-full">
+            <Link
+              to={`/projects/${project.id}`}
+              className="pixel-card p-6 block h-full"
+            >
+              <div className="mb-4">
+                <img src={project.iconPath} alt={project.name} className="w-10 h-10 object-contain" />
+              </div>
+              <h3 className="text-xl font-bold mb-2" style={{ color: 'var(--c-text-primary)' }}>
+                {project.name}
+              </h3>
+              <p className="text-sm" style={{ color: 'var(--c-text-secondary)' }}>
+                {project.description.slice(0, 60)}...
+              </p>
+            </Link>
+          </AnimateInView>
         ))}
       </div>
       <div className="text-center mt-8">

@@ -45,7 +45,7 @@ export const projects: Project[] = [
   {
     id: 'light-at',
     name: 'Light At',
-    description: '一款专注于为 VS Code 及其衍生 IDE 提供边界的大语言模型聊天功能的轻量级智能助手插件，提供数学公式渲染、便捷的模型配置与切换、聊天上下文选择和聊天历史管理功能。',
+    description: '一款专注于为 VS Code 及其衍生 IDE 提供大语言模型聊天功能的轻量级智能助手插件，提供数学公式渲染、便捷的模型配置与切换、聊天上下文选择和聊天历史管理功能。',
     iconPath: '/icons/light-at.png',
     startDate: '2025/03',
     github: 'https://github.com/HiMeditator/light-at',

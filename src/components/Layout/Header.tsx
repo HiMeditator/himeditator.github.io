@@ -14,21 +14,21 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-c-bg-secondary/80 pixel-blur border-b-2 border-c-border px-4 py-3">
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
           <img src="/pixelhead.png" alt="Logo" className="w-8 h-8 object-contain" />
-          <span className="font-bold text-lg" style={{ color: 'var(--c-text-primary)' }}>
+          <span className="font-bold text-lg hidden sm:inline" style={{ color: 'var(--c-text-primary)' }}>
             HiMeditator
           </span>
         </Link>
 
-        <nav className="flex items-center gap-6">
+        <nav className="flex items-center gap-3 sm:gap-6">
           {navItems.map(({ path, label }) => {
             const isActive = location.pathname === path
             return (
               <Link
                 key={path}
                 to={path}
-                className="transition-colors"
+                className={`pixel-nav-link transition-colors text-sm sm:text-base whitespace-nowrap ${isActive ? 'active' : ''}`}
                 style={{ color: isActive ? 'var(--c-accent)' : 'var(--c-text-secondary)' }}
               >
                 {label}
