@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiMeditator - 个人网站</title>
+  <link rel="icon" type="image/gif" href="/favicon.gif" />
+  <script>
+    // GitHub Pages 404 路由转发
+    // 将当前路径存入 sessionStorage，然后跳转到 index.html
+    var pathSegments = window.location.pathname.slice(1).split('/');
+    sessionStorage.setItem('redirectPath', '/' + pathSegments.join('/'));
+    window.location.replace(window.location.origin + '/index.html');
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
